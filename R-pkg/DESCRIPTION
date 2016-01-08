@@ -1,0 +1,15 @@
+Package: bigartm
+Type: Package
+Title: R interface to bigartm
+Version: 0.1
+Date: 2016-01-06
+Author: Dmitriy Selivanov
+Maintainer: Dmitriy Selivanov <selivanov.dmitriy@gmail.com>
+Description: R interface to bigartm
+License: see bigartm license
+LazyData: TRUE
+Imports:
+    Rcpp (>= 0.11),
+    RProtoBuf
+LinkingTo: Rcpp
+RoxygenNote: 5.0.0

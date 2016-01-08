@@ -105,3 +105,11 @@ docs/_build/*
 build*
 
 /src/python/.idea/*
+
+R-pkg/.Rproj*
+R-pkg\.Rproj\.user$
+.Rproj.user
+^.*\.Rproj$
+^\.Rproj\.user$
+R-pkg/.Rhistory
+

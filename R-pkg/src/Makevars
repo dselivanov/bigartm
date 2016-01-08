@@ -1,0 +1,8 @@
+## This is a C++11 package
+CXX_STD = CXX11
+
+# PKG_CPPFLAGS += -I../../src/artm/
+PKG_CPPFLAGS = -I../inst/include
+PKG_LIBS = -L../../build/src/artm/ -lartm
+
+
