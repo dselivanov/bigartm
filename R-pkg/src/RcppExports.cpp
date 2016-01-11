@@ -6,14 +6,25 @@
 using namespace Rcpp;
 
 // R_ArtmCreateMasterComponent
-int R_ArtmCreateMasterComponent(int length, RawVector master_component_config);
-RcppExport SEXP bigartm_R_ArtmCreateMasterComponent(SEXP lengthSEXP, SEXP master_component_configSEXP) {
+Int32 R_ArtmCreateMasterComponent(RawVector master_component_config);
+RcppExport SEXP bigartm_R_ArtmCreateMasterComponent(SEXP master_component_configSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
-    Rcpp::traits::input_parameter< int >::type length(lengthSEXP);
     Rcpp::traits::input_parameter< RawVector >::type master_component_config(master_component_configSEXP);
-    __result = Rcpp::wrap(R_ArtmCreateMasterComponent(length, master_component_config));
+    __result = Rcpp::wrap(R_ArtmCreateMasterComponent(master_component_config));
+    return __result;
+END_RCPP
+}
+// R_ArtmCreateDictionary
+Int32 R_ArtmCreateDictionary(Int32 master_id, RawVector dict_component_config);
+RcppExport SEXP bigartm_R_ArtmCreateDictionary(SEXP master_idSEXP, SEXP dict_component_configSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< Int32 >::type master_id(master_idSEXP);
+    Rcpp::traits::input_parameter< RawVector >::type dict_component_config(dict_component_configSEXP);
+    __result = Rcpp::wrap(R_ArtmCreateDictionary(master_id, dict_component_config));
     return __result;
 END_RCPP
 }

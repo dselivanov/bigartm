@@ -9,7 +9,9 @@
 #endif /* STRICT_R_HEADERS */
 
 
-#include "artm/c_interface.h"
+#include "c_interface.h"
+#include <Rcpp.h>
+
 using namespace std;
 using namespace Rcpp;
 
