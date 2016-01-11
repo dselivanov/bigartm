@@ -9,9 +9,10 @@ Description: R interface to bigartm
 License: see bigartm license
 SystemRequirements: protobuf 2.5.0
 LazyData: TRUE
-Imports:
-    Rcpp (>= 0.11),
+Depend:
     RProtoBuf (>= 0.4.3)
+Imports:
+    Rcpp (>= 0.11)
 Suggests:
     testthat
 LinkingTo: Rcpp
