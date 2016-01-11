@@ -1,6 +1,7 @@
 .onLoad <- function(libname, pkgname) {
-  messages_proto <- system.file("include/artm/messages.proto", package = "bigartm")
+  messages_proto <- system.file("proto/messages.proto", package = "bigartm")
   RProtoBuf::readProtoFiles( messages_proto )
+  # ls( "RProtoBuf:DescriptorPool" )
 }
 
 .onUnload <- function(libpath) {
