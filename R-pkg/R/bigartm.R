@@ -4,6 +4,6 @@
 #' @name bigartm
 #' @import Rcpp
 #' @import RProtoBuf
-#' @export R_ArtmCreateMasterComponent
+#' @export artm_dict_conf
 #' @useDynLib bigartm
-#'
+NULL
